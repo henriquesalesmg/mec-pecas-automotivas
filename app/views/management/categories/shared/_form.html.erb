@@ -1,0 +1,38 @@
+
+<div id="content">
+
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-4 text-gray-800"><%= action %></h1>
+
+        <% if @category.errors.any? %>
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <% @category.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end -%>
+                </ul>
+            </div>
+        <% end -%>
+
+        <%= form_for([:management, @category]) do |f| %>
+
+          <div class="form-group">
+                <label for="exampleInputEmail1">Descrição da Categoria</label>
+                <div class="col-sm-6">
+                  <%= f.text_field :description, :class => 'form-control alert-warning', :id => 'exampleInputName', :placeholder => 'Ex: Veículo/Camionete' %>
+                </div>
+                <small id="nameHelp" class="form-text text-muted">Determine a categoria de acordeo com o sistema</small>
+            </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+
+        <% end -%> 
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>

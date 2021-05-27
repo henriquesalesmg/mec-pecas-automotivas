@@ -1,0 +1,16 @@
+Especificações do Sistema MecPeçasAuto
+
+
+USUÁRIO
+- Cadastrar-se no site (DEVISE) md 03 - 004
+- Inserir anúncio
+- Fazer perguntas em anúncios
+- Verificar perfil
+    - Alterar dados da conta
+    - Responder Perguntas
+
+ADMINISTRADOR
+- Login (Devise)
+- Verificar Estatísticas (Qtd de usuários, Itens mais buscados)
+- Cadastrar novas categorias
+- Moderar perguntas

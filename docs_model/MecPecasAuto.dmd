@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MecPecasAuto" id="05CB6D46-8433-D439-12E9-9D1B50D4DC40" version="3.5">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:39:24 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>05CB6D46-8433-D439-12E9-9D1B50D4DC40</designId>
+</OSDM_Design>

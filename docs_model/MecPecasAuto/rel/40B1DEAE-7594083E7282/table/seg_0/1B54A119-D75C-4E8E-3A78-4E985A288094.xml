@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B54A119-D75C-4E8E-3A78-4E985A288094" name="Adverts">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:48:58 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6B51B25D-CF3F-C7C1-6FD7-1A5C99665F5B">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:53:56 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="26B7E948-8AA6-C08A-D98A-C4010CBB6474">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:53:56 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="AD0A9A3F-2AFA-C9E8-F3DE-1FB6D2650D28">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:53:56 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="EB716F88-F1C4-2A2F-19BB-E3605FA93F90">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:53:56 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="image" id="5E6E4B2F-162F-EDDF-6BFC-B4068CA964D8">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:54:25 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_id" id="CA31312B-BDE3-D253-5C05-A436407FBB83">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 20:05:05 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B9BD1BA-B8CC-8044-4467-4A29ED2AAB84" referredColumn="D661CF24-D68E-DA9C-651D-21873D3E7D11"/>
+</associations>
+</Column>
+<Column name="member_id" id="0B1E9792-BDB3-CA20-4426-509C3BF3B630">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 20:05:46 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C46B54A3-4DDC-59DA-516D-23BC79D1ED84" referredColumn="C91D1E35-61E5-B33D-28F3-55E30E534B67"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="251BBD74-285C-235D-BB7F-38E7E9FD4792" name="Adverts_PK">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 20:17:01 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B51B25D-CF3F-C7C1-6FD7-1A5C99665F5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEFCE64E-DF1F-CA9A-0067-54A561DD4E8D" name="Adverts_Categories_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 20:06:53 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA31312B-BDE3-D253-5C05-A436407FBB83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="835F4F7B-38D6-0FC0-65A5-47164F0024C1" name="Adverts_Members (Devise)_FK">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 20:09:06 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B1E9792-BDB3-CA20-4426-509C3BF3B630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75816FAD-C911-A749-AF46-D01E08FEF7CF" name="Members (Devise)">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:55:55 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C91D1E35-61E5-B33D-28F3-55E30E534B67">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:56:27 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C983D2E5-67A7-5592-5489-6C137A4016EA" name="Members (Devise)_PK">
+<createdBy>User</createdBy>
+<createdTime>2021-05-24 19:56:27 UTC</createdTime>
+<ownerDesignName>MecPecasAuto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C91D1E35-61E5-B33D-28F3-55E30E534B67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

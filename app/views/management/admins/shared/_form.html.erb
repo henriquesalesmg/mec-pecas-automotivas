@@ -1,0 +1,58 @@
+
+<div id="content">
+
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-4 text-gray-800"><%= action %></h1>
+
+        <% if @admin.errors.any? %>
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <% @admin.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end -%>
+                </ul>
+            </div>
+        <% end -%>
+
+        <%= form_for([:management, @admin]) do |f| %>
+
+          <div class="form-group">
+                <label for="exampleInputEmail1">Nome Completo</label>
+                <div class="col-sm-6">
+                  <%= f.text_field :name, :class => 'form-control alert-warning', :id => 'exampleInputName', :placeholder => 'Nome do Administrador' %>
+                </div>
+            </div>
+
+          <div class="form-group">
+                <label for="exampleInputEmail1">E-mail</label>
+                <div class="col-sm-6">
+                  <%= f.text_field :email, :class => 'form-control alert-warning', :id => 'exampleInputEmail', :placeholder => 'email@email.com' %>
+                </div>
+            </div>
+
+          <div class="form-group">
+                <label for="exampleInputEmail1">Senha</label>
+                <div class="col-sm-6">
+                  <%= f.password_field :password, :class => 'form-control alert-warning', :id => 'exampleInputPassword', :placeholder => 'Digite uma senha segura'%>
+                </div>
+          </div>
+
+          <div class="form-group">
+                <label for="exampleInputEmail1">Confirmação da Senha</label>
+                <div class="col-sm-6">
+                  <%= f.password_field :password_confirmation, :class => 'form-control alert-warning', :id => 'exampleInputPasswordConfirmation', :placeholder => 'Confirmação de senha' %>
+                </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+
+        <% end -%> 
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
